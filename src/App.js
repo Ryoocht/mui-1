@@ -8,6 +8,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { purple, green } from '@mui/material/colors'
 import '@fontsource/roboto/500.css'
 import MuiAppbar from './components/MuiAppbar'
+import CardSkeleton from './components/CardSkeleton'
 
 function App() {
 
@@ -29,12 +30,13 @@ function App() {
 
   return (
     <ThemeProvider theme={theme} >
-      <MuiAppbar />
+      {/* <MuiAppbar />
       <MuiButton />
       <MuiCheckbox />
       <MuiTextField />
       <MuiTypography />
-      <MuiGrid />
+      <MuiGrid /> */}
+      <CardSkeleton />
     </ThemeProvider>
   )
 }
